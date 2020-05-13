@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/474x/1f/e1/5e/1fe15eb5dd243a34ef7585927f98a49f--texture-board-d-texture.jpg);
+    background-size: 70vh;
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+  }
+
+@media (min-width: 400px) {
+    body{
+      font-size: 20px;
+    }
+}
+
+@media (min-width: 800px) {
+  body{
+    font-size: 25px;
+  }
+}
+
+header {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.menu {
+    background-color:rgb(255, 255, 255);
+    position: fixed;
+    width: 100vw;
+    top: 0; 
+  }
+  
+.menu li {
+    list-style: none;
+  }
+  
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+.menu a {
+    display: block;
+    padding: 10px 20px;
+  }
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 255);
+  }
+  
+a:hover {
+    text-decoration: underline;
+  }
+  
+.site-subtitle,
+.site-title {
+    color: rgb(10, 10, 43);
+    text-align: center;
+  }
+  
+.site-subtitle {
+    font-family: 'Bangers', cursive;
+    line-height: 1.5em;
+  }
+
+.site-title {
+    font-size:2em;
+    font-family: 'Bangers', cursive;
+  }
+
+.desenhos1 {
+    padding: 0.7em;
+    height: 100vh;
+  }
+
+.desenhos1 h2 {
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0.7em;
+    font-size: 1.7em;
+  }
+
+.desenhos1 .grid {
+  display: grid;
+  gap: 2em;
+  }
+
+@media (min-width:640px) {
+  .desenhos1 .grid{
+  grid-template-columns: repeat(2, 240px);
+    }
+  }
+
+@media (min-width: 990px ) {
+  .desenhos1 .grid{
+  grid-template-columns: repeat(3, 240px);
+  align-content: center;
+  justify-content: center;
+  height: calc (75vh - 3.1em - 0.7em)
+    }
+  }
+
+.desenhos1 figure {
+  text-align: center;
+  }
+
+.img-instagram {
+  height: 140px;
+  width: 240px;
+  object-fit: cover;
+  border-radius: 5px;
+  }
